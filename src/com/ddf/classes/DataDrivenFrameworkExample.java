@@ -14,8 +14,7 @@ public class DataDrivenFrameworkExample {
 		try {
 			ChromeDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			FileInputStream fis = new FileInputStream("D:\\ExcelR\\Selenium_Morning\\DataDrivenFramework\\src\\com\\ddf\\utils\\inputs.properties");
 			Properties p = new Properties();
 			p.load(fis);
