@@ -18,12 +18,12 @@ public class DataDrivenFrameworkExample {
 			FileInputStream fis = new FileInputStream("D:\\ExcelR\\Selenium_Morning\\DataDrivenFramework\\src\\com\\ddf\\utils\\inputs.properties");
 			Properties p = new Properties();
 			p.load(fis);
-			String url = p.getProperty("url");
+			String urlLink = p.getProperty("url");
 			String principal_amount = p.getProperty("principal_amount");
 			String rate_of_interest = p.getProperty("rate_of_interest");
 			String desired_time = p.getProperty("desired_time");
 			
-			driver.get(url);
+			driver.get(urlLink);
 			WebElement generalMathLink = driver.findElement(By.linkText("General Math"));
 			Thread.sleep(3000);
 			generalMathLink.click();
